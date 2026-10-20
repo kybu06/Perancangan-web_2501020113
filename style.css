@@ -1,0 +1,308 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #183d73;
+    font-size: 13px;
+    min-width: 1000px;
+}
+
+/* Navigasi */
+header {
+    background: white;
+    border-bottom: 1px solid #eeeeee;
+}
+
+nav {
+    max-width: 900px;
+    margin: auto;
+    padding: 14px 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h3 {
+    font-size: 17px;
+    font-weight: bold;
+}
+
+nav div {
+    display: flex;
+    gap: 18px;
+}
+
+nav a {
+    color: #183d73;
+    text-decoration: none;
+    font-size: 10px;
+}
+
+/* Beranda */
+.hero {
+    background: #eff6ff;
+    padding: 30px max(calc((100% - 900px) / 2), 8%);
+    min-height: 247px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.hero h1 {
+    font-size: 23px;
+    line-height: 1.1;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    color: #647b9d;
+    max-width: 450px;
+    font-size: 11px;
+    margin: 10px 0;
+}
+
+.hero .biru {
+    color: #2864ff;
+}
+
+.tombol {
+    display: inline-block;
+    background: #2864f5;
+    color: white;
+    padding: 7px 14px;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 4px;
+}
+
+.bingkai-foto {
+    background: white;
+    padding: 12px;
+    border: 1px solid #dce7f8;
+    border-radius: 7px;
+}
+
+.bingkai-foto img {
+    display: block;
+    width: 115px;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Isi halaman */
+main {
+    max-width: 900px;
+    margin: auto;
+    padding: 0 8px;
+}
+
+section h2 {
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+/* Tentang Saya */
+.tentang {
+    padding: 43px 0 70px;
+}
+
+.tentang p {
+    max-width: 600px;
+    color: #647b9d;
+    font-size: 11px;
+    line-height: 1.5;
+}
+
+/* Pendidikan */
+#pendidikan {
+    padding-bottom: 25px;
+}
+
+.timeline {
+    border-left: 1px solid #cbdcff;
+    margin: 20px 0 0 8px;
+    padding-left: 27px;
+}
+
+.timeline article {
+    position: relative;
+    margin-bottom: 17px;
+}
+
+.timeline article::before {
+    content: "";
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    background: #2864ff;
+    border-radius: 50%;
+    left: -31px;
+    top: 4px;
+}
+
+.timeline h4 {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
+
+.timeline p {
+    font-size: 10px;
+    color: #647b9d;
+    line-height: 1.5;
+}
+
+/* Keahlian */
+#keahlian {
+    padding: 20px 0 80px;
+}
+
+.keahlian {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 8px 10px;
+}
+
+.keahlian article {
+    background: #eff6ff;
+    border-left: 2px solid #2864ff;
+    padding: 12px;
+    min-width: 0;
+}
+
+.keahlian b {
+    font-size: 10px;
+}
+
+.keahlian p {
+    font-size: 9px;
+    color: #647b9d;
+    margin-top: 4px;
+    line-height: 1.5;
+}
+
+/* Proyek */
+#proyek {
+    padding: 0 0 43px;
+}
+
+.proyek {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+}
+
+.proyek article {
+    min-width: 0;
+    border: 1px solid #dce7f8;
+    border-radius: 3px;
+    padding: 12px;
+}
+
+.proyek small {
+    color: #2864ff;
+    font-size: 9px;
+}
+
+.proyek h4 {
+    font-size: 10px;
+    margin: 8px 0 5px;
+}
+
+.proyek p {
+    font-size: 9px;
+    color: #647b9d;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.proyek span {
+    color: #647b9d;
+    font-size: 9px;
+}
+
+/* Kontak - Desktop */
+.kontak {
+    width: 100%;
+    background: #eff6ff;
+    padding: 43px max(calc((100% - 900px) / 2), 8%);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 40px;
+    min-height: 337px;
+}
+
+.kontak h2 {
+    font-size: 17px;
+    margin-bottom: 12px;
+}
+
+.kontak p {
+    color: #647b9d;
+    font-size: 11px;
+    margin-top: 12px;
+    line-height: 1.5;
+}
+
+.form-tampilan {
+    width: 100%;
+    background: white;
+    border: 1px solid #dce7f8;
+    border-radius: 3px;
+    padding: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.form-tampilan small {
+    color: #647b9d;
+    font-size: 8px;
+    margin-bottom: 3px;
+}
+
+.form-tampilan label {
+    font-size: 10px;
+}
+
+.kolom {
+    width: 100%;
+    height: 27px;
+    background: #f8fafc;
+    border: 1px solid #dce4ef;
+    border-radius: 2px;
+}
+
+.kolom.pesan {
+    height: 59px;
+}
+
+.kirim {
+    align-self: flex-start;
+    background: #2864f5;
+    color: white;
+    padding: 7px 13px;
+    border-radius: 3px;
+    font-size: 10px;
+    font-weight: bold;
+    margin-top: 2px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 16px;
+    border-top: 1px solid #dce7f8;
+    color: #647b9d;
+    font-size: 9px;
+}

@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Rizky</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        nav a:hover {
+            color: #2864ff;
+        }
+
+        .kirim {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <!-- Inline CSS -->
+        <h3 style="color: #183d73;">Portofolio</h3>
+        <div>
+            <a href="#beranda">Beranda</a>
+            <a href="#tentang">Tentang Saya</a>
+            <a href="#pendidikan">Pendidikan</a>
+            <a href="#keahlian">Keahlian</a>
+            <a href="#proyek">Proyek</a>
+            <a href="#kontak">Kontak</a>
+        </div>
+    </nav>
+</header>
+
+<section class="hero" id="beranda">
+    <div>
+        <h1>Halo, Saya Rizky Akbar<br>Hidayatullah</h1>
+        <p class="biru">Mahasiswa | Web Designer Pemula</p>
+        <p>Saya sedang belajar membuat website menggunakan HTML dan CSS serta mengembangkan kemampuan desain web melalui latihan sederhana yang diberikan oleh dosen saya.</p>
+        <a class="tombol" href="#proyek">Lihat Proyek</a>
+    </div>
+
+    <div class="bingkai-foto">
+        <img src="foto umrah.jpeg" alt="Foto Rizky">
+    </div>
+</section>
+
+<main>
+    <section id="tentang" class="tentang">
+        <h2>Tentang Saya</h2>
+        <p>Perkenalkan, nama saya Rizky Akbar Hidayatullah. Saya lahir di Tanjung Balai Karimun, pada 6 Februari 2007 dan saat ini sedang menempuh pendidikan di perguruan tinggi Universitas Maritim Raja Ali Haji. Saya tertarik mempelajari teknologi, khususnya pembuatan website. Saya terus belajar HTML dan CSS untuk meningkatkan kemampuan dalam membuat website yang rapi, menarik, dan mudah digunakan.</p>
+    </section>
+
+    <section id="pendidikan">
+        <h2>Riwayat Pendidikan</h2>
+        <div class="timeline">
+            <article>
+                <h4>SD (Sekolah Dasar)</h4>
+                <p>Nama sekolah: SDN 006 Kundur Barat</p>
+                <p>Tahun　　　 : 2013–2019</p>
+            </article>
+
+            <article>
+                <h4>SMP (Sekolah Menengah Pertama)</h4>
+                <p>Nama sekolah: SMPS Darul Furqan</p>
+                <p>Tahun　　　 : 2019–2022</p>
+            </article>
+
+            <article>
+                <h4>SMA (Sekolah Menengah Atas)</h4>
+                <p>Nama sekolah: SMAS Darul Furqan</p>
+                <p>Jurusan　　 : IPA (Ilmu Pengetahuan Alam)</p>
+                <p>Tahun　　　 : 2022–2025</p>
+            </article>
+
+            <article>
+                <h4>Perguruan Tinggi</h4>
+                <p>Nama universitas: Universitas Maritim Raja Ali Haji</p>
+                <p>Program studi　: Teknik Informatika</p>
+                <p>Tahun　　　　 : 2025–sekarang</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="keahlian">
+        <h2>Keahlian</h2>
+        <div class="keahlian">
+            <article>
+                <b>HTML Dasar</b>
+                <p>membuat struktur halaman website.</p>
+            </article>
+
+            <article>
+                <b>CSS Dasar</b>
+                <p>mengatur warna, font, dan tata letak.</p>
+            </article>
+
+            <article>
+                <b>Desain Website</b>
+                <p>menyusun tampilan website yang rapi.</p>
+            </article>
+
+            <article>
+                <b>Dasar UI/UX</b>
+                <p>mempelajari kenyamanan pengguna website.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="proyek">
+        <h2>Proyek</h2>
+        <div class="proyek">
+            <article>
+                <small>01</small>
+                <h4>Website Portofolio</h4>
+                <p>latihan membuat website untuk memperkenalkan diri.</p>
+                <span>HTML dan CSS</span>
+            </article>
+
+            <article>
+                <small>02</small>
+                <h4>Landing Page</h4>
+                <p>latihan membuat halaman promosi diri secara sederhana.</p>
+                <span>HTML dan CSS</span>
+            </article>
+
+            <article>
+                <small>03</small>
+                <h4>Desain Antarmuka</h4>
+                <p>latihan menyusun tampilan halaman website agar lebih rapi.</p>
+                <span>HTML dan CSS</span>
+            </article>
+        </div>
+    </section>
+</main>
+
+<section id="kontak" class="kontak">
+    <div>
+        <h2>Kontak</h2>
+        <p>Punya pertanyaan atau ingin berdiskusi? Silakan hubungi saya.</p>
+    </div>
+
+    <div class="form-tampilan">
+        <small>Kirim pesan ke Rizky Akbar Hidayatullah — pesan tidak dikirim.</small>
+
+        <label>Nama</label>
+        <div class="kolom"></div>
+
+        <label>Email</label>
+        <div class="kolom"></div>
+
+        <label>Pesan</label>
+        <div class="kolom pesan"></div>
+
+        <div class="kirim">Kirim Pesan</div>
+    </div>
+</section>
+
+<footer>© 2026 Rizky Akbar Hidayatullah</footer>
+
+</body>
+</html>
